@@ -144,7 +144,7 @@ function renderHTML(page: string) {
     
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js"></script>
-    <script src="/static/app.js" type="module"></script>
+    <script src="/static/app.js"></script>
 </body>
 </html>`
 }
