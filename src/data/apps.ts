@@ -1383,65 +1383,6 @@ export const appsData: AppData[] = [
       es: ['Receptores satelitales', 'Cajas Linux', 'Dispositivos Enigma2']
     }
   },
-  // Additional IPTV Players
-  {
-    id: 'ipfox-player',
-    name: 'Ipfox Player',
-    category: 'player',
-    icon: '🦊',
-    description: {
-      en: 'Fast and reliable IPTV player with modern interface and powerful features',
-      ar: 'مشغل IPTV سريع وموثوق بواجهة حديثة ومميزات قوية',
-      fr: 'Lecteur IPTV rapide et fiable avec interface moderne et fonctionnalités puissantes',
-      es: 'Reproductor IPTV rápido y confiable con interfaz moderna y características poderosas'
-    },
-    features: {
-      en: ['M3U & Xtream Support', 'Multiple Playlists', 'Favorites Management', 'Search Function', 'Picture-in-Picture', 'Automatic Updates'],
-      ar: ['دعم M3U و Xtream', 'قوائم تشغيل متعددة', 'إدارة المفضلة', 'وظيفة البحث', 'صورة داخل صورة', 'تحديثات تلقائية'],
-      fr: ['Support M3U et Xtream', 'Listes de lecture multiples', 'Gestion des favoris', 'Fonction de recherche', 'Image dans l\'image', 'Mises à jour automatiques'],
-      es: ['Soporte M3U y Xtream', 'Listas de reproducción múltiples', 'Gestión de favoritos', 'Función de búsqueda', 'Picture-in-Picture', 'Actualizaciones automáticas']
-    },
-    installation: {
-      en: [
-        'Install Ipfox Player from Google Play or App Store',
-        'Launch the app and tap on "Add Server"',
-        'Select connection type (M3U URL or Xtream)',
-        'Enter your subscription credentials',
-        'Save and load the channel list',
-        'Start watching your favorite channels'
-      ],
-      ar: [
-        'قم بتثبيت Ipfox Player من Google Play أو App Store',
-        'افتح التطبيق واضغط على "إضافة خادم"',
-        'اختر نوع الاتصال (M3U URL أو Xtream)',
-        'أدخل بيانات الاشتراك الخاصة بك',
-        'احفظ وحمّل قائمة القنوات',
-        'ابدأ مشاهدة قنواتك المفضلة'
-      ],
-      fr: [
-        'Installez Ipfox Player depuis Google Play ou App Store',
-        'Lancez l\'application et appuyez sur "Ajouter un serveur"',
-        'Sélectionnez le type de connexion (URL M3U ou Xtream)',
-        'Entrez vos identifiants d\'abonnement',
-        'Enregistrez et chargez la liste des chaînes',
-        'Commencez à regarder vos chaînes préférées'
-      ],
-      es: [
-        'Instala Ipfox Player desde Google Play o App Store',
-        'Inicia la aplicación y toca "Agregar servidor"',
-        'Selecciona el tipo de conexión (URL M3U o Xtream)',
-        'Ingresa tus credenciales de suscripción',
-        'Guarda y carga la lista de canales',
-        'Comienza a ver tus canales favoritos'
-      ]
-    },
-    devices: {
-      en: ['Android Devices', 'iOS (iPhone/iPad)', 'Android TV', 'Smart TV', 'Tablets'],
-      ar: ['أجهزة أندرويد', 'iOS (آيفون/آيباد)', 'أندرويد TV', 'التلفزيون الذكي', 'الأجهزة اللوحية'],
-      fr: ['Appareils Android', 'iOS (iPhone/iPad)', 'Android TV', 'Smart TV', 'Tablettes'],
-      es: ['Dispositivos Android', 'iOS (iPhone/iPad)', 'Android TV', 'Smart TV', 'Tabletas']
-    }
-  },
   {
     id: 'reseller-panel',
     name: 'IPTV Reseller Panel',
