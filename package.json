@@ -1,5 +1,5 @@
 {
-  "name": "flix-iptv",
+  "name": "webapp",
   "type": "module",
   "scripts": {
     "dev": "vite",
