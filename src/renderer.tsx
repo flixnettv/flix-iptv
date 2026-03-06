@@ -1,12 +1,14 @@
-import { jsxRenderer } from 'hono/jsx-renderer'
+export function render() {
 
-export const renderer = jsxRenderer(({ children }) => {
-  return (
-    <html>
-      <head>
-        <link href="/static/style.css" rel="stylesheet" />
-      </head>
-      <body>{children}</body>
-    </html>
-  )
-})
+  const app = document.getElementById("app")
+
+  if (!app) return
+
+  app.innerHTML = `
+  
+  <h1>Flix IPTV</h1>
+  <p>Welcome to the IPTV platform</p>
+
+  `
+
+}
