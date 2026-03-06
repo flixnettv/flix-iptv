@@ -20,8 +20,9 @@
 - **Public**: https://3000-i6ifki3ejbzylf5sdkp2t-18e660f9.sandbox.novita.ai
 
 ### Production
+- **GitHub**: https://github.com/flixnettv/flix-iptv
 - **Will be deployed to**: Cloudflare Pages
-- **Expected URL**: https://webapp.pages.dev
+- **Expected URL**: https://flix-iptv.pages.dev
 
 ## 📊 Data Architecture
 
@@ -172,32 +173,48 @@ webapp/
 - [x] FAQ accordion section
 
 ## 🚀 Deployment Status
-- **Local Development**: ✅ Active
-- **GitHub**: ⏳ Pending
-- **Cloudflare Pages**: ⏳ Pending
+- **Local Development**: ✅ Active at http://localhost:3000
+- **GitHub**: ✅ Pushed to https://github.com/flixnettv/flix-iptv
+- **Cloudflare Pages**: ⏳ Ready to deploy (need API key setup)
 
 ## 🔜 Next Steps
-1. **Setup GitHub**: Configure GitHub authorization in sidebar → Push code
+1. ✅ **GitHub Setup**: Code pushed to https://github.com/flixnettv/flix-iptv
 2. **Setup Cloudflare**: Configure Cloudflare API key in Deploy tab
 3. **Deploy to Cloudflare Pages**: Run `npm run deploy:prod`
-4. **Configure Custom Domain**: (optional) Add custom domain in Cloudflare
-5. **Test All Pages**: Verify all 24 app pages and forms work correctly
+4. **Test Production**: Verify all features work on production URL
+5. **Configure Custom Domain**: (optional) Add custom domain in Cloudflare
 6. **SEO Optimization**: Add structured data and sitemap
 7. **Performance**: Optimize images and add lazy loading
 
 ## 📋 How to Deploy
 
-### Prerequisites
-- GitHub account configured in sidebar
-- Cloudflare account with API key in Deploy tab
-
-### Deployment Steps
+### GitHub (✅ Completed)
 ```bash
-# 1. Push to GitHub (after configuring GitHub in sidebar)
-git remote add origin https://github.com/YOUR_USERNAME/flix-iptv.git
-git push -u origin main
+# Already pushed to GitHub
+git remote -v
+# origin  https://github.com/flixnettv/flix-iptv.git (fetch)
+# origin  https://github.com/flixnettv/flix-iptv.git (push)
+```
 
-# 2. Deploy to Cloudflare Pages (after configuring API key)
+### Cloudflare Pages Deployment
+
+#### Prerequisites
+- ✅ Code on GitHub: https://github.com/flixnettv/flix-iptv
+- ⏳ Cloudflare account with API key
+
+#### Option 1: Via Cloudflare Dashboard (Recommended)
+1. Go to https://dash.cloudflare.com/
+2. Navigate to **Pages** → **Create a project**
+3. Connect to GitHub and select `flixnettv/flix-iptv`
+4. Build settings:
+   - **Build command**: `npm run build`
+   - **Build output directory**: `dist`
+   - **Root directory**: `/`
+5. Click **Save and Deploy**
+
+#### Option 2: Via CLI (After API Key Setup)
+```bash
+# After configuring Cloudflare API key in Deploy tab
 npm run deploy:prod
 ```
 
