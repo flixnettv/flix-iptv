@@ -1,15 +1,24 @@
 {
   "name": "flix-iptv",
+  "version": "1.0.0",
+  "private": true,
   "type": "module",
+
   "scripts": {
-    "dev": "wrangler pages dev . --compatibility-date=2026-03-06",
-    "build": "echo 'No build step needed'",
-    "deploy": "wrangler pages deploy . --project-name=flix-iptv"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "wrangler pages dev dist",
+    "deploy": "npm run build && wrangler pages deploy dist"
   },
+
   "dependencies": {
     "hono": "^4.12.5"
   },
+
   "devDependencies": {
-    "wrangler": "^4.4.0"
+    "vite": "^6.3.5",
+    "typescript": "^5.0.0",
+    "wrangler": "^4.4.0",
+    "@cloudflare/workers-types": "^4.20250705.0"
   }
 }
